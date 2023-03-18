@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            background-color: gray;
+            padding: 30px;
+        }
+        .btn {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button class='btn'></button>
+        <button class='btn'></button>
+        <button class='btn'></button>
+        <button class='btn'></button>
+        <button class='btn'></button>
+        <button class='btn'></button>
+    </div>
+
+    <button id="removerEvent" class="btn">CLIQUE</button>
+
+    <script>
+
+        /* 
+        PROPAGATION = Quando for necessario criar eventos iguais em varios elementos, o ideal é colocar o evento no pai,
+        e colocar o stopPropagation nos elementos, para eles nn herdarem os eventos do pai.
+
+        REMOVEEVENT = Quando quiser remover um elemento, é necessario 2 parâmetros, o primeiro o tipo do evento 
+        que quer remover, e o segundo a funcao que quer remover, e para isso ela precisa ser referenciada.
+        */
+
+        const container = document.querySelector('#container')
+        const btns = [...container.querySelectorAll('.btn')]
+        const btnRemove = document.querySelector('#removerEvent')
+        
+        container.addEventListener('click', mudarCor)
+
+        btns.map((el) => {
+            el.addEventListener('click', myStopPropagation)
+        })
+
+        btnRemove.addEventListener('click', (evt) => {
+            btns.forEach((button) => {
+                button.removeEventListener('click', myStopPropagation)
+            })
+        })
+
+        function mudarCor(e) {
+            e.target.style.backgroundColor = 'blue'
+        }
+
+        function myStopPropagation(evento) {
+            evento.stopPropagation()
+        }
+
+    </script>
+
+</body</html>
