@@ -5,7 +5,7 @@ let n = 25;
 let nr = n.toString() + 300;
 console.log (nr);
 
-// A função "n.toFixed(2)", essa função preserva os numeros após o "." ou ","
+// A função "n.toFixed(2)", essa função preserva os numeros após o "." ou ",".
 //a quantidade de numeros a seres preservados é passado pelo parâmetro.
 let x = 10.45475;
 let xr = x.toFixed(2)
