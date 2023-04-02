@@ -16,7 +16,7 @@ console.log(listToJoin);
 
 // O método indexOf("caju"), busca o parâmetro dentro do array, retornando o seu indice, caso ele não encontre o parâmetro, ele retorna o valor -1.
 let listIndexOf = list.indexOf("caju")
-console.log(listIndexOf);
+console.log(listIndexOf );
 
 
 // O método pop(), vai remover o ultimo indice do array.
