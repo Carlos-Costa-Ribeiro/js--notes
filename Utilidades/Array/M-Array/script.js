@@ -4,7 +4,7 @@ let list = ["caju", "bola", "madeira"];
 
 // O método toString()", converte uma variavel que seja um array para uma string.
 // Separa os elementos automaticamente apenas pela virgula de dentro do array.aaa
-let listToString = list.toString();
+let listToString  = list.toString();
 console.log(listToString);
 
 
