@@ -1,6 +1,6 @@
 // ----------------------------------------------- SIMPLE METHODS ------------------------------------------------------
 
-let list = ["caju", "bola", "madeira"];
+let list =  ["caju", "bola", "madeira"];
 
 // O método toString()", converte uma variavel que seja um array para uma string.
 // Separa os elementos automaticamente apenas pela virgula de dentro do array.aaa
