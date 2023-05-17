@@ -10,7 +10,7 @@ console.log(listToString);
 
 // O método join("-")", converte uma variavel que seja um array para uma string.
 // Separa os elementos pelo parâmetro do join().
-let listToJoin = list.join("$");
+let listToJoin =  list.join("$");
 console.log(listToJoin);
 
 
