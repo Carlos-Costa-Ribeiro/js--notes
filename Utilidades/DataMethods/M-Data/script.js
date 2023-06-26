@@ -2,7 +2,7 @@
 
 // A função "new Date()" cria automaticamente um objeto que corresponde a data atual do momento em que aquela variavel
 //foi criada.
-let data = new Date();
+let data  = new Date();
 console.log(data)
 
 // Maneira de criar a data diferente.
